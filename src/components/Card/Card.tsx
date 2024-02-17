@@ -3,7 +3,8 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { variant3 } from "./CardVariant";
 import Button from "../Button/Button";
-import Loading from "../Loading/Loading";
+
+import Card2 from "./Card2";
 
 interface CardProps {
   id: number;
@@ -12,6 +13,8 @@ interface CardProps {
   imagem: string;
   preco?: string;
 }
+
+
 
 const Card: React.FC = () => {
   const [loading, setLoading] = useState<boolean>(true);
@@ -25,7 +28,7 @@ const Card: React.FC = () => {
         );
         console.log(response);
         setProduct(response.data.slice(0, 4));
-        setLoading(false); // Marca o carregamento como concluído
+        setLoading(false); 
       } catch (error) {
         console.error("error ao obter produtos");
       }
@@ -36,7 +39,7 @@ const Card: React.FC = () => {
   return (
     <div className="flex justify-center flex-wrap">
       {loading ? (
-        <Loading /> // Renderiza o componente Loading enquanto espera a resposta da API
+       <Card2/> 
       ) : (
         <>
           {product.map((produto) => (
