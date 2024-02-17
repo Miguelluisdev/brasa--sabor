@@ -11,7 +11,7 @@ const Footer = () => {
         </div>
         <div className='md:flex-1 w-full mx-auto text-center md:text-left'>
           <h1 className='text-2xl text-white font-semibold mb-2 font-PermanentMarker'>Redes Sociais</h1>
-          <div className="flex space-x-4">
+          <div className="flex justify-center items-center space-x-4">
             <FaFacebook className="text-white text-2xl cursor-pointer hover:text-azul-celeste" />
             <FaInstagram className="text-white text-2xl cursor-pointer hover:text-azul-celeste" />
             <FaTwitter className="text-white text-2xl cursor-pointer hover:text-azul-celeste" />
