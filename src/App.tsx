@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {Routes, Route, HashRouter} from "react-router-dom";
 import Storage from "./pages/Storage";
 import Login from "./pages/Login";
 import Barbecuemeter from "./pages/Barbecuemeter";
@@ -13,7 +13,7 @@ function App() {
 
 
   return (
-    <BrowserRouter>
+    <HashRouter  >
     <Routes>
       <Route path="/" element={<BaseLayout />} />
       <Route path="/storage" element={<Storage />} />
@@ -22,7 +22,7 @@ function App() {
       <Route path="/register" element={<Register />} />
       <Route path="/blog" element={<Blog />} />
     </Routes>
-  </BrowserRouter>
+  </HashRouter>
 
   )
 }
