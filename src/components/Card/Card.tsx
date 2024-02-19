@@ -24,7 +24,7 @@ const Card: React.FC = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get<CardProps[]>(
-          "http://localhost:4000/utensiliosChurrasco"
+          "https://api-storage-tiaw-puce.vercel.app/utensiliosChurrasco"
         );
         console.log(response);
         setProduct(response.data.slice(0, 4));
