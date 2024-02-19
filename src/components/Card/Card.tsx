@@ -4,7 +4,8 @@ import { motion } from "framer-motion";
 import { variant3 } from "./CardVariant";
 import Button from "../Button/Button";
 
-import Card2 from "./Card2";
+
+import Loading from "../Loading/Loading";
 
 interface CardProps {
   id: number;
@@ -39,7 +40,7 @@ const Card: React.FC = () => {
   return (
     <div className="flex justify-center flex-wrap">
       {loading ? (
-       <Card2/> 
+       <Loading/> 
       ) : (
         <>
           {product.map((produto) => (
