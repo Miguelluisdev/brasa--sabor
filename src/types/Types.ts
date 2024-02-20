@@ -21,8 +21,19 @@ export const nomesAlimentos: Record<string, string> = {
     frango: "Frango",
     paoAlho: "Pao de Alho",
     queijoCoalho: "Queijo Coalho",
+};
+
+export const nomesBebidas: Record<string, string> = {
     agua: "Água",
     suco: "Suco",
     cerveja: "Cerveja",
     refrigerante: "Refrigerante"
 };
+
+
+
+
+// agua: "Água",
+// suco: "Suco",
+// cerveja: "Cerveja",
+// refrigerante: "Refrigerante"

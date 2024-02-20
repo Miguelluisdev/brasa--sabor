@@ -19,7 +19,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="text-sm text-center text-white font-Mont">© 2023 by Brasa&Sabor. Created on <span className='underline '>Miguel Luis.</span></div>
+      <div className="text-sm text-center text-white font-Mont">© 2024 by Brasa&Sabor. Created on <span className='underline '>Miguel Luis.</span></div>
     </div>
   )
 }

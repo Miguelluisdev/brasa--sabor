@@ -6,6 +6,8 @@ import Register from "./pages/Register";
 import BaseLayout from "./pages/BaseLayout";
 import Blog from "./pages/Blog";
 import ErrorPage from "./pages/ErrorPage";
+import ResultBarbecue from "./components/ResultBarbecue/ResultBarbecue";
+
 
 
 
@@ -23,6 +25,7 @@ function App() {
       <Route path="/barbecuemeter" element={<Barbecuemeter />}  errorElement={<ErrorPage/>}  />
       <Route path="/register" element={<Register />}  errorElement={<ErrorPage/>}  />
       <Route path="/blog" element={<Blog />}  errorElement={<ErrorPage/>} />
+      <Route path="/result" element={<ResultBarbecue/>}  errorElement={<ErrorPage/>} />
     </Routes>
   </BrowserRouter>
 
