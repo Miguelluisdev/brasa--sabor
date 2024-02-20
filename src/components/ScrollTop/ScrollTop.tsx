@@ -17,8 +17,6 @@ const ScrollTop: React.FC = () => {
       setIsVisible(false);
     }
   };
-
-  // Adiciona um event listener para o scroll
   React.useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => {

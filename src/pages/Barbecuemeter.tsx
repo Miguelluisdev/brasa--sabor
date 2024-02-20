@@ -1,8 +1,11 @@
+import Header from "../components/Header/Header"
 
 
 const Barbecuemeter = () => {
   return (
-    <div>Barbecuemeter</div>
+    <>
+    <Header/>
+    </>
   )
 }
 

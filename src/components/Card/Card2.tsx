@@ -36,8 +36,8 @@ const utensiliosChurras = [
 ];
 
 const Card2 = () => {
-  const [loading] = useState<boolean>(false); // Removed setLoading as we're not using axios anymore
-  const product = utensiliosChurras.slice(0, 4); // Removed setProduct as we're not fetching data
+  const [loading] = useState<boolean>(false); 
+  const product = utensiliosChurras.slice(0, 4); 
 
   return (
     <div className="flex justify-center flex-wrap">
