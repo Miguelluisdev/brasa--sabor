@@ -1,18 +1,17 @@
 export type Alimento = "carne" | "linguica" | "frango" | "paoAlho" | "queijoCoalho";
 export type Bebidas = "agua" | "suco" | "cerveja" | "refrigerante";
 
-type Quantidade = [number, string]; // [valor, unidade de medida]
 
-export const quantidadePessoas: Record<Alimento | Bebidas, Quantidade> = {
-    carne: [400, "gramas"],
-    linguica: [200, "gramas"],
-    frango: [200, "gramas"],
-    paoAlho: [100, "gramas"],
-    queijoCoalho: [20, "unidades"], 
-    agua: [2, "litros"],
-    suco: [2, "litros"],
-    cerveja: [2, "latas"],
-    refrigerante: [2, "litros"]
+export const quantidadePessoas: Record<Alimento | Bebidas, number> = {
+    carne: 400, 
+    linguica: 200,
+    frango: 200,
+    paoAlho: 100, 
+    queijoCoalho: 20, 
+    agua: 2, 
+    suco: 2, 
+    cerveja: 3, 
+    refrigerante: 3
 };
 
 export const nomesAlimentos: Record<string, string> = {
