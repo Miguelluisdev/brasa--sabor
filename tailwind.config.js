@@ -16,7 +16,7 @@ export default {
       "Marrom": "#8B4513",
       "Amarelo": "#FFA500",
       "azul-celeste": "#080F26",
-      "black": '#191624',
+      "black": '#0D0D0D',
       "white": "#FFF"
     },
     animation: {
