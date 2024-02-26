@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { nomesAlimentos } from "../../types/Types";
 import { nomesBebidas } from "../../types/Types";
 import { Formik, Field, Form } from "formik";
@@ -8,6 +8,7 @@ import { FaBowlFood } from "react-icons/fa6";
 import { GiSodaCan } from "react-icons/gi";
 import { motion } from "framer-motion";
 import { variant1 } from "./CalculatorVariant";
+
 
 const esquemaValidation = Yup.object().shape({
   pessoas: Yup.number().min(1, "Número de pessoas é obrigatório"),
@@ -131,6 +132,7 @@ const CalculatorBarbecue = () => {
                 {" "}
                 Calcular
               </button>
+              <Link to="/" className="font-Mont text-md font-medium underline hover:text-black" >Voltar Pagina Principal</Link>
             </Form>
           )}
         </Formik>
