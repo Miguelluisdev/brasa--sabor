@@ -14,7 +14,13 @@ const createUserFormSchema = z.object({
         invalid_type_error: " o nome deve ser valido",
     })
     .min(5, "requer o minimo de 5 caracteres")
-    .max(20,"maximo 20 caracteres"),
+    .max(20,"maximo 20 caracteres")
+    .transform(name => {
+        return name.trim().split(' ').map(word => {
+            return word[0].toLocaleUpperCase().concat(word.substring(1))
+        }).join(' ')
+    })
+    ,
 
     email: z.string()
     .regex(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/ , "email obrigatorio")
@@ -31,11 +37,7 @@ const createUserFormSchema = z.object({
 })
 
 
-type Inputs = {
-    name: string;
-    password: string;
-    email:string;
-}
+type Inputs =  z.infer<typeof createUserFormSchema>
 
 export default function Step1() {
     const navigate = useNavigate()
