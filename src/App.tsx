@@ -8,6 +8,7 @@ import Blog from './pages/Blog';
 import ErrorPage from './pages/ErrorPage';
 import ResultBarbecue from './components/ResultBarbecue/ResultBarbecue';
 import Step2 from './components/RegisterComponents/Step2';
+import Step3 from './components/RegisterComponents/Step3';
 
 function App() {
   const router = createBrowserRouter([
@@ -41,6 +42,10 @@ function App() {
     },
     { path: '/step2', 
     element: <Step2/>, 
+    errorElement: <ErrorPage />
+    },
+    { path: '/step3', 
+    element: <Step3/>, 
     errorElement: <ErrorPage />
     },
   ]);
