@@ -57,7 +57,7 @@ const Step3 = () => {
   });
 
   const handleSubmitForm = (data: schemaAddress) => {
-    // localStorage.setItem('userData', JSON.stringify(data));
+    localStorage.setItem('userData', JSON.stringify(data));
     console.log(data)
   };
 
