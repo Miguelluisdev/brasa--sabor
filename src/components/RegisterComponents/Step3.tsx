@@ -5,6 +5,7 @@ import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useCallback, useEffect } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const schemaFormAddress = z.object({
   address: z.object({
@@ -39,6 +40,8 @@ type AddressProps = {
 }
 
 const Step3 = () => { 
+  const navigate = useNavigate()
+
   const { register, handleSubmit, formState: { errors } , watch , setValue } = useForm<schemaAddress>({
     criteriaMode: "all",
     mode: "all",
@@ -58,7 +61,7 @@ const Step3 = () => {
 
   const handleSubmitForm = (data: schemaAddress) => {
     localStorage.setItem('userData', JSON.stringify(data));
-    console.log(data)
+    navigate("/step3")
   };
 
   const handleSetData = useCallback((data: AddressProps) => {
