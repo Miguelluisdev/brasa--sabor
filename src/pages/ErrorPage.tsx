@@ -16,7 +16,7 @@ export default function ProductBoundary() {
     }
   }
 
-  return <div className="flex justify-center items-center borde border-azul-celeste bg-Amarelo" >
+  return <div className="flex justify-center items-center borde border-azul-celeste bg" >
       <h2 className="font-Mont text-9xl font-bold text-Amarelo " >Algo deu errado.</h2>
   </div>
 }
