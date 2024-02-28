@@ -34,7 +34,7 @@ const Step2 = () => {
   return (
     <motion.div variants={variant1(0.5)} initial="hidden" whileInView="show" viewport={{ once: false, amount: 0.25 }}>
     <div className="bg-cover bg-center bg-no-repeat h-screen flex-col flex items-center justify-center "  style={{backgroundImage: "url('https://cdn.discordapp.com/attachments/1205228548986511420/1211426287311134780/proximo-do-delicioso-churrasco-mexicano.jpg?ex=65ee27a6&is=65dbb2a6&hm=4eb71d0e41ee6031444394646926180bc8ca8616bd9c163bb07464b983717655&')" ,  backgroundBlendMode: 'darken', backgroundColor: 'rgba(0, 0, 0, 0.412)' }}>
-    <h1 className='bg-Verdeescuro text-white font-PermanentMarker font-medium text-3xl' >apenas simula um cartão não possui validação use 4devs</h1>
+    <h1 className='bg-Verdeescuro text-white font-PermanentMarker font-medium text-3xl' > passo 2 - apenas simula um cartão não possui validação use 4devs</h1>
       <div className="bg-white rounded-lg shadow-lg p-8 max-w-sm w-full">
         <Cards
           number={state.number}
