@@ -63,7 +63,7 @@ export default function Step1() {
     return (
         <motion.div variants={variant1(0.5)} initial="hidden" whileInView="show" viewport={{ once: false, amount: 0.25 }}>
             <div className="flex justify-center items-center h-screen">
-                <form className="w-full md:w-3/4 lg:w-2/4 xl:w-1/3 p-8 bg-black rounded-lg shadow-lg" onSubmit={handleSubmit(createUser)}>
+                <form className="w-full md:w-3/4 lg:w-2/4 xl:w-1/3 p-8 bg-black bg-opacity-50 rounded-lg shadow-lg" onSubmit={handleSubmit(createUser)}>
                     <h2 className="text-2xl font-semibold mb-4 text-center text-white">Cadastro - Passo 1</h2>
                     <div className="space-y-4">
                         <div className="space-y-2">
