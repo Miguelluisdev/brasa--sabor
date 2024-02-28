@@ -60,7 +60,7 @@ const Step3 = () => {
   });
 
   const handleSubmitForm = (data: schemaAddress) => {
-    localStorage.setItem('userData', JSON.stringify(data));
+    localStorage.setItem('userCep', JSON.stringify(data));
     navigate("/step3")
   };
 

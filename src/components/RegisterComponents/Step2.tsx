@@ -27,7 +27,7 @@ const Step2 = () => {
 
   const handleSubmit = (evt: React.FormEvent<HTMLFormElement>) => {
     evt.preventDefault();
-    localStorage.setItem('userData', JSON.stringify(state)); 
+    localStorage.setItem('userCard', JSON.stringify(state)); 
     navigate('/step3'); 
   }
 
