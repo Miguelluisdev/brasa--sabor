@@ -13,7 +13,7 @@ const schemaFormAddress = z.object({
     street: z.string().min(1, "Informe uma Rua válida"),
     number: z.string().min(1, "Informe um Numero válido"),
     district: z.string().min(1, "Informe um Bairro válido"),
-    complement: z.string().min(1, "Informe um complemento válido"),
+    complement: z.string(),
     city: z.string().min(1, "Informe uma Cidade válida"),
     state: z.string().min(1, "Informe um Estado válido"),
   })
@@ -59,9 +59,9 @@ const Step3 = () => {
     }
   });
 
-  const handleSubmitForm = (data: schemaAddress) => {
-    localStorage.setItem('userCep', JSON.stringify(data));
-    navigate("/step3")
+  const handleForm = (data: schemaAddress) => {
+    localStorage.setItem('formData', JSON.stringify(data));
+    navigate("/");
   };
 
   const handleSetData = useCallback((data: AddressProps) => {
@@ -73,8 +73,8 @@ const Step3 = () => {
   }, [setValue])
 
   const handleFetchAddress = useCallback(async (zipcode: string) => {
-  const {data} =  await axios.get(
-    `https://viacep.com.br/ws/${zipcode}/json/`
+    const {data} =  await axios.get(
+      `https://viacep.com.br/ws/${zipcode}/json/`
     );
     handleSetData(data)
   }, [handleSetData]);
@@ -85,13 +85,13 @@ const Step3 = () => {
     setValue("address.zipCode" , zipCode)
       if (zipCode.length !== 9) return;
       handleFetchAddress(zipCode)
- }, [handleFetchAddress , setValue , zipCode])
+  }, [handleFetchAddress , setValue , zipCode])
 
   return (
     <div className="flex justify-center items-center h-screen" style={{backgroundImage: "url('https://cdn.discordapp.com/attachments/1205228548986511420/1211426287311134780/proximo-do-delicioso-churrasco-mexicano.jpg?ex=65ee27a6&is=65dbb2a6&hm=4eb71d0e41ee6031444394646926180bc8ca8616bd9c163bb07464b983717655&')" ,  backgroundBlendMode: 'darken', backgroundColor: 'rgba(0, 0, 0, 0.412)' }}>
       <motion.div variants={variant1(0.5)} initial="hidden" whileInView="show" viewport={{ once: false, amount: 0.25 }} className="bg-opacity-50 bg-black p-8 rounded-md">
         <h2 className='text-center text-white font-PermanentMarker font-medium text-3xl mb-4'>Cep - passo 3</h2>
-        <form onSubmit={handleSubmit(handleSubmitForm)} className="flex flex-col items-center">
+        <form onSubmit={handleSubmit(handleForm)} className="flex flex-col items-center">
           <input 
             {...register("address.zipCode")}
             type="text"
@@ -135,6 +135,13 @@ const Step3 = () => {
             className="border border-yellow-400 text-black rounded-md px-4 py-2 focus:outline-none focus:border-blue-500 mb-4"
           />
            {errors.address?.state?.message && <p className="font-Mont text-white text-md" >{errors.address?.state?.message}</p>}
+           <input 
+            {...register("address.number")}
+            type="text"
+            placeholder="Numero"
+            className="border border-yellow-400 text-black rounded-md px-4 py-2 focus:outline-none focus:border-blue-500 mb-4"
+          />
+           {errors.address?.number?.message && <p className="font-Mont text-white text-md" >{errors.address?.number?.message}</p>}
           <button type="submit" className="bg-Amarelo text-white px-4 py-2 rounded-md hover:bg-Vermelhoescuro focus:outline-none focus:bg-azul-celeste">Enviar</button>
         </form>
       </motion.div>
