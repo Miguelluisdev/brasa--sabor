@@ -16,7 +16,7 @@ const BaseLayout = () => {
 
       <div className="bg-Cinza escuro scroll-smooth snap-y">
       <div className="animate-slide relative bg-fixed bg-cover bg-left md:bg-center min-h-screen w-full m-0" 
-      style={{backgroundImage: "url('https://cdn.discordapp.com/attachments/1205228548986511420/1207393226311344128/proximo-do-delicioso-churrasco-mexicano.jpg?ex=65df7b91&is=65cd0691&hm=7cfcb8bcdf4bae3f2a1d629806f5ac7583ce2d4a67f5f16928e0db17b2250119&')" ,  backgroundBlendMode: 'darken', backgroundColor: 'rgba(0, 0, 0, 0.412)' }}
+      style={{backgroundImage: "url('https://cdn.discordapp.com/attachments/1205228548986511420/1207393226311344128/proximo-do-delicioso-churrasco-mexicano.jpg?ex=65f1f091&is=65df7b91&hm=0cb8b3069e30284748ac0aa6f9ecd04702fe165b0fbf6d5757f5c773a4481b5c&')" ,  backgroundBlendMode: 'darken', backgroundColor: 'rgba(0, 0, 0, 0.412)' }}
       >
         <Header/>
         <Home/>
@@ -24,7 +24,7 @@ const BaseLayout = () => {
         <TextContainet/>
       </div>
 
-      <div className="animate-slide bg-cover bg-gradient-to-tr bg-no-repeat from-Cinzaescuro  h-full" style={{backgroundImage: "url('https://cdn.discordapp.com/attachments/1205228548986511420/1208132729515016232/bife-suculento-carne-rara-medio-com-especiarias-e-legumes-grelhados.jpg?ex=65e22c48&is=65cfb748&hm=0520007e631bede78db6e2e5df31a9cf602ff78ac6d2e3b9930ef6f93c8accdc&')" ,  backgroundBlendMode: 'darken', backgroundColor: 'rgba(0, 0, 0, 0.412)'}}>
+      <div className="animate-slide bg-cover bg-gradient-to-tr bg-no-repeat from-Cinzaescuro  h-full" style={{backgroundImage: "url('https://cdn.discordapp.com/attachments/1205228548986511420/1208132729515016232/bife-suculento-carne-rara-medio-com-especiarias-e-legumes-grelhados.jpg?ex=65f4a148&is=65e22c48&hm=1d5aef7477349538fc2febb6cfe434df9874ae2a02d57f59fe1feb28172dd8f9&')" ,  backgroundBlendMode: 'darken', backgroundColor: 'rgba(0, 0, 0, 0.412)'}}>
           <div className="max-w-[1440px] w-full mx-auto p-5">
            <MainCard/>
            <About/>
