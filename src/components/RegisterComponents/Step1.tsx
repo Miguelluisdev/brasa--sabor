@@ -74,6 +74,7 @@ export default function Step1() {
                                 type="text"
                                 placeholder="Nome"
                                 {...register("name")}
+                                maxLength={15}
                             />
                             {errors.name &&  <p className="font-Mont text-white text-md" >{errors.name.message}</p>}
                         </div>
