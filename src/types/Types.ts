@@ -30,9 +30,31 @@ export const nomesBebidas: Record<string, string> = {
 };
 
 
+// types.ts
+export interface User {
+    name: string;
+    email: string;
+    password: string;
+  }
+  
+  export interface FormData {
+    city: string;
+    complement: string;
+    district: string;
+    number: string;
+    state: string;
+    street: string;
+    zipCode: string;
+  }
+  
 
 
-// agua: "Água",
-// suco: "Suco",
-// cerveja: "Cerveja",
-// refrigerante: "Refrigerante"
+  
+  export interface UserCard {
+    cvc: string;
+    expiry: string;
+    focus: string;
+    name: string;
+    number: string;
+  }
+  

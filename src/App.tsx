@@ -9,6 +9,7 @@ import ErrorPage from './pages/ErrorPage';
 import ResultBarbecue from './components/ResultBarbecue/ResultBarbecue';
 import Step2 from './components/RegisterComponents/Step2';
 import Step3 from './components/RegisterComponents/Step3';
+import DataUser from './components/Header/DataUser/DataUser';
 
 function App() {
   const router = createBrowserRouter([
@@ -46,6 +47,10 @@ function App() {
     },
     { path: '/step3', 
     element: <Step3/>, 
+    errorElement: <ErrorPage />
+    },
+    { path: '/dts', 
+    element: <DataUser/>, 
     errorElement: <ErrorPage />
     },
   ]);

@@ -17,7 +17,7 @@ const ShowProduct = () => {
           initial="hidden"
           whileInView="show"
           className="bg-slate-900/50 md:bg-slate-700/50 border-2 border-slate-700 p-8 rounded-xl flex flex-col justify-center items-center">
-          <img className="rounded-lg" src="https://cdn.discordapp.com/attachments/1205228548986511420/1208125994272301058/fd20089871820d5fdc7a72cf22a426b9.gif?ex=65e22602&is=65cfb102&hm=eb74b8898c91bad09b89d984c0ffccc5af5389c8048e6dd54a9bd897c2d9b439&" alt="Vídeo" />
+          <img className="rounded-lg" src="https://cdn.discordapp.com/attachments/1205228548986511420/1208125994272301058/fd20089871820d5fdc7a72cf22a426b9.gif?ex=65eb6082&is=65d8eb82&hm=9f0aa3faf87e10dc924b9f46c917d86f8af7291adc041d8e82727c2d3d954e37&" alt="Vídeo" />
           <div className="text-center">
             <h1 className="text-4xl text-white font-semibold mt-6 font-PermanentMarker">Conheça nossos produtos!</h1>
             <p className="text-lg my-5 text-white opacity-70 font-Mont">
