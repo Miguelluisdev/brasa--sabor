@@ -4,7 +4,6 @@ import Login from './pages/Login';
 import Barbecuemeter from './pages/Barbecuemeter';
 import Register from './pages/Register';
 import BaseLayout from './pages/BaseLayout';
-import Blog from './pages/Blog';
 import ErrorPage from './pages/ErrorPage';
 import ResultBarbecue from './components/ResultBarbecue/ResultBarbecue';
 import Step2 from './components/RegisterComponents/Step2';
@@ -32,10 +31,6 @@ function App() {
     { path: '/register',
      element: <Register />, 
      errorElement: <ErrorPage />,
-    },
-    { path: '/blog',
-     element: <Blog />,
-      errorElement: <ErrorPage />
     },
     { path: '/result', 
     element: <ResultBarbecue />, 
