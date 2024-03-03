@@ -6,6 +6,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useCallback, useEffect } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import bg from "../../assets/proximo-do-delicioso-churrasco-mexicano.jpg"
 
 const schemaFormAddress = z.object({
   address: z.object({
@@ -88,7 +89,7 @@ const Step3 = () => {
   }, [handleFetchAddress , setValue , zipCode])
 
   return (
-    <div className="flex justify-center items-center h-screen" style={{backgroundImage: "url('https://cdn.discordapp.com/attachments/1205228548986511420/1211426287311134780/proximo-do-delicioso-churrasco-mexicano.jpg?ex=65ee27a6&is=65dbb2a6&hm=4eb71d0e41ee6031444394646926180bc8ca8616bd9c163bb07464b983717655&')" ,  backgroundBlendMode: 'darken', backgroundColor: 'rgba(0, 0, 0, 0.412)' }}>
+    <div className="flex justify-center items-center h-screen" style={{backgroundImage: `url('${bg}')` ,  backgroundBlendMode: 'darken', backgroundColor: 'rgba(0, 0, 0, 0.412)' }}>
       <motion.div variants={variant1(0.5)} initial="hidden" whileInView="show" viewport={{ once: false, amount: 0.25 }} className="bg-opacity-50 bg-black p-8 rounded-md">
         <h2 className='text-center text-white font-PermanentMarker font-medium text-3xl mb-4'>Cep - passo 3</h2>
         <form onSubmit={handleSubmit(handleForm)} className="flex flex-col items-center">

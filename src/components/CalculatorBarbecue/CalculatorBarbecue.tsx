@@ -72,7 +72,7 @@ const CalculatorBarbecue = () => {
                   name="pessoas"
                   type="number"
                   className="text-black block w-full mt-1 px-4 py-2 border border-Vermelhoescuro rounded-md focus:outline-none focus:border-Vermelhoescuro"
-                  style={{ width: "100%" }} // Ajuste de largura
+                  style={{ width: "100%" }} 
                 ></Field>
                 {errors.pessoas && touched.pessoas ? (
                   <p className="font-Mont text-Amarelo">
