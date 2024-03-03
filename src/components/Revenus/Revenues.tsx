@@ -13,7 +13,7 @@ const Revenues = () => {
             <p className='pt-3 pb-6 text-white font-Mont'>
               Descubra sabores incríveis e aprenda a preparar pratos deliciosos para o seu churrasco. Temos uma variedade de receitas que vão surpreender seus convidados e tornar o seu evento ainda mais especial.
             </p>
-            <a href="https://www.academiadacarnefriboi.com.br"><button className="text-black md:px-14 md:py-4 px-8 py-3 m-auto md:m-0 w-fit bg-Marrom rounded-full hover:bg-transparent duration-200 hover:border-white hover:text-white border-azul-celeste border-2">Veja Mais</button></a>
+            <a href="https://www.academiadacarnefriboi.com.br" target='_blank' ><button className="text-black md:px-14 md:py-4 px-8 py-3 m-auto md:m-0 w-fit bg-Marrom rounded-full hover:bg-transparent duration-200 hover:border-white hover:text-white border-azul-celeste border-2">Veja Mais</button></a>
           </motion.div>
         </div>
       </div>
