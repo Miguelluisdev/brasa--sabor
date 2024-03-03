@@ -1,11 +1,12 @@
 import { motion } from 'framer-motion';
 import { variant7 } from './RevVariants';
 import { Link } from "react-router-dom";
+import bg from "../../assets/Design-sem-nome-2-1-1200x480.png"
 
 const Revenues = () => {
   return (
     <div className="text-center md:text-left py-10 overflow-hidden transform-style"  >
-      <div className='bg-azul-celeste bg-cover bg-center -z-[1] translate3d min-h-full rounded-3xl' style={{backgroundImage: "url('https://cdn.discordapp.com/attachments/1205228548986511420/1208198294489272350/Design-sem-nome-2-1-1200x480.png?ex=65e26958&is=65cff458&hm=da0eae102c584bec6b9ee88d0adece67fdbc2d8fca0f477ee448d6fb9003b57e&')" ,  backgroundBlendMode: 'darken', backgroundColor: 'rgba(0, 0, 0, 0.412)'}}>
+      <div className='bg-azul-celeste bg-cover bg-center -z-[1] translate3d min-h-full rounded-3xl' style={{backgroundImage: `url('${bg}')` ,  backgroundBlendMode: 'darken', backgroundColor: 'rgba(0, 0, 0, 0.412)'}}>
         <div className="px-5 md:px-20 py-40">
           <motion.div variants={variant7(0.4)} initial='hidden' whileInView='show' className="md:max-w-md w-full">
             <h1 className='text-white font-PermanentMarker text-3xl md:text-5xl'>Veja algumas receitas deliciosas</h1>

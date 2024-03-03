@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { variant2 } from "./ProductVariant";
 import Button from "../Button/Button";
 import { RiShoppingCart2Fill } from "react-icons/ri";
-
+import bg from "../../assets/fd20089871820d5fdc7a72cf22a426b9.gif"
 const ShowProduct = () => {
   return (
     <div className="min-h-screen p-5 lg:sticky -top-12  flex justify-center md:justify-end max-w-[1440px] w-full mx-auto" >
@@ -17,7 +17,7 @@ const ShowProduct = () => {
           initial="hidden"
           whileInView="show"
           className="bg-slate-900/50 md:bg-slate-700/50 border-2 border-slate-700 p-8 rounded-xl flex flex-col justify-center items-center">
-          <img className="rounded-lg" src="https://cdn.discordapp.com/attachments/1205228548986511420/1208125994272301058/fd20089871820d5fdc7a72cf22a426b9.gif?ex=65eb6082&is=65d8eb82&hm=9f0aa3faf87e10dc924b9f46c917d86f8af7291adc041d8e82727c2d3d954e37&" alt="Vídeo" />
+          <img className="rounded-lg" src={bg} alt="Vídeo" />
           <div className="text-center">
             <h1 className="text-4xl text-white font-semibold mt-6 font-PermanentMarker">Conheça nossos produtos!</h1>
             <p className="text-lg my-5 text-white opacity-70 font-Mont">
