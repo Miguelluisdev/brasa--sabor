@@ -20,7 +20,7 @@ const UserComponent = () => {
 
   const handleUserClick = () => {
     if (userName === "User") {
-      navigate("/login");
+      navigate("/register");
     } else {
       navigate("/dts");
     }
