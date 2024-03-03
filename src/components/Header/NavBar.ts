@@ -21,9 +21,5 @@ export const navbar = {
         url: '/register',
         text: 'Registro'
       },
-      {
-        url: '/blog',
-        text: 'Receitas'
-      },
     ]
   }
