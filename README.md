@@ -3,6 +3,7 @@
 
 
   <h1>Brasa&Sabor </h1>
+  <a href="https://brasa-sabor.vercel.app" >Veja O Site</a>
 
   <p>Bem-vindo ao front-end do projeto Brasa&Sabor Este repositório contém o código fonte e os recursos relacionados à interface do usuário do projeto.</p>
 
