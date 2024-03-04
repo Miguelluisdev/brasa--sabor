@@ -1,8 +1,9 @@
-import Header from "../components/Header/Header"
+
+import Header2 from "../components/Header/Header2"
 const Storage = () => {
   return (
     <div>
-      <Header/>
+      <Header2/>
     </div>
   )
 }
