@@ -14,8 +14,8 @@
     <li>React.js:  React com suporte a TypeScript.</li>
     <li>TypeScript: Um superset de JavaScript que adiciona tipagem estática à linguagem. O TypeScript melhora a manutenção do código e fornece autocompletar durante o desenvolvimento.</li>
     <li>Tailwind CSS: Um framework de utilitários CSS. O Tailwind CSS simplifica a estilização da aplicação com a abordagem utility-first, proporcionando flexibilidade e facilidade na criação de estilos customizados.</li>
-    Claro, aqui está a lista das ferramentas e dependências mencionadas:
-
+    
+ lista das ferramentas e dependências mencionadas:
 - **@hookform/resolvers** (v3.3.4)
 - **@types/axios** (v0.14.0)
 - **axios** (v1.6.7)
