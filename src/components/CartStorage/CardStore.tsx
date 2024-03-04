@@ -29,7 +29,7 @@ const CardStore: React.FC = () => {
           "https://api-storage-tiaw-puce.vercel.app/utensiliosChurrasco"
         );
         console.log(response);
-        setProduct(response.data.slice(0, 4));
+        setProduct(response.data);
         setLoading(false); 
       } catch (error) {
         console.error("error ao obter produtos");
