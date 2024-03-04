@@ -6,7 +6,7 @@
 
   <p>Bem-vindo ao front-end do projeto Brasa&Sabor Este repositório contém o código fonte e os recursos relacionados à interface do usuário do projeto.</p>
 
-  <h2>Tecnologias Utilizadas</h2>
+  <h2>Tecnologias/Ferramentas Utilizadas</h2>
 
   <p>O front-end do projeto Proben foi desenvolvido utilizando as seguintes tecnologias e ferramentas:</p>
 
@@ -14,6 +14,28 @@
     <li>React.js:  React com suporte a TypeScript.</li>
     <li>TypeScript: Um superset de JavaScript que adiciona tipagem estática à linguagem. O TypeScript melhora a manutenção do código e fornece autocompletar durante o desenvolvimento.</li>
     <li>Tailwind CSS: Um framework de utilitários CSS. O Tailwind CSS simplifica a estilização da aplicação com a abordagem utility-first, proporcionando flexibilidade e facilidade na criação de estilos customizados.</li>
+    Claro, aqui está a lista das ferramentas e dependências mencionadas:
+
+- **@hookform/resolvers** (v3.3.4)
+- **@types/axios** (v0.14.0)
+- **axios** (v1.6.7)
+- **class-variance-authority** (v0.7.0)
+- **clsx** (v2.1.0)
+- **formik** (v2.4.5)
+- **framer-motion** (v11.0.5)
+- **json-server** (v1.0.0-alpha.23)
+- **lucide-react** (v0.340.0)
+- **react** (v18.2.0)
+- **react-credit-cards-2** (v1.0.2)
+- **react-dom** (v18.2.0)
+- **react-fast-marquee** (v1.6.4)
+- **react-hook-form** (v7.50.1)
+- **react-icons** (v5.0.1)
+- **react-select** (v5.8.0)
+- **tailwind-merge** (v2.2.1)
+- **tailwindcss-animate** (v1.0.7)
+- **yup** (v1.3.3)
+- **zod** (v3.22.4)
   </ul>
 
 <h2>Estrutura do Projeto</h2>
