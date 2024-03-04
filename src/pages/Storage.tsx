@@ -5,6 +5,7 @@ import { CartProvider } from '../contexts/CartProvider';
 import churrasco from "../assets/churrasco.jpg";
 import Header2 from '../components/CartStorage/Header2';
 import CardStore from '../components/CartStorage/CardStore';
+import ScrollTop from '../components/ScrollTop/ScrollTop';
 
 const Storage = () => {
   return (
@@ -20,6 +21,7 @@ const Storage = () => {
         <Header2/>
         <CardStore/>
       </div>
+      <ScrollTop/>
     </CartProvider>
   );
 };
