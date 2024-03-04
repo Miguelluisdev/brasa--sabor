@@ -58,3 +58,10 @@ export interface User {
     number: string;
   }
   
+  export interface Item {
+    id: number;
+    nome: string;
+    descricao: string;
+    preco: number;
+    imagem: string;
+  }

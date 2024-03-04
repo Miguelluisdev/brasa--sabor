@@ -9,6 +9,7 @@ import ResultBarbecue from './components/ResultBarbecue/ResultBarbecue';
 import Step2 from './components/RegisterComponents/Step2';
 import Step3 from './components/RegisterComponents/Step3';
 import DataUser from './components/Header/DataUser/DataUser';
+import ThanksPage from './pages/ThanksPage';
 
 function App() {
   const router = createBrowserRouter([
@@ -18,7 +19,7 @@ function App() {
     },
     { path: '/storage',
      element: <Storage />, 
-     errorElement: <ErrorPage /> 
+     errorElement: <ErrorPage />, 
     },
     { path: '/login', 
     element: <Login />, 
@@ -46,6 +47,10 @@ function App() {
     },
     { path: '/dts', 
     element: <DataUser/>, 
+    errorElement: <ErrorPage />
+    },
+    { path: '/thanks', 
+    element: <ThanksPage/>, 
     errorElement: <ErrorPage />
     },
   ]);
